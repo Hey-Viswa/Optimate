@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Optimate",
+  title: "AutomateX",
   description: "A Modern Workflow Management Tool",
 };
 

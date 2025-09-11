@@ -10,6 +10,8 @@ import {
 } from '@/components/ui/tooltip'
 import { menuOptions } from '@/lib/constants'
 import clsx from 'clsx'
+import { Separator } from '@radix-ui/react-dropdown-menu'
+import { Database, GitBranchIcon, LucideMousePointerClick } from 'lucide-react'
 
 type Props = {}
 
@@ -24,7 +26,7 @@ const MenuOptions = (props: Props) => {
           href="/"
         >
           <span className="text-2xl font-bold text-neutral-600 dark:text-white">
-            optimate.
+           AutomateX.
           </span>
         </Link>
         <TooltipProvider>
@@ -59,6 +61,30 @@ const MenuOptions = (props: Props) => {
             </ul>
           ))}
         </TooltipProvider>
+        <Separator />
+        <div className='flex items-center flex-col gap-9 dark:bg-[#353346]/30 py-4 px-2 rounded-full h-56 overflow-y-auto scrollbar-hide border-[1px]'>
+          <div className='relative dark:bg-[#353346]/70 p-2 rounded-full dark:border-t-[2px] border-[1px] dark:border-t-[#353346]'>
+            <LucideMousePointerClick
+              className='dark:text-white'
+              size={18}
+            />
+            <div className="border-l-2 border-muted-foreground/50 h-6 absolute left-1/2 transform translate-x-[-50%] -bottom-[30px]"/>
+          </div>
+          <div className='relative dark:bg-[#353346]/70 p-2 rounded-full dark:border-t-[2px] border-[1px] dark:border-t-[#353346]'>
+            <GitBranchIcon
+              className='dark:text-white'
+              size={18}
+            />
+            <div className="border-l-2 border-muted-foreground/50 h-6 absolute left-1/2 transform translate-x-[-50%] -bottom-[30px]"/>
+          </div> 
+          <div className='relative dark:bg-[#353346]/70 p-2 rounded-full dark:border-t-[2px] border-[1px] dark:border-t-[#353346]'>
+            <Database
+              className='dark:text-white'
+              size={18}
+            />
+            <div className="border-l-2 border-muted-foreground/50 h-6 absolute left-1/2 transform translate-x-[-50%] -bottom-[30px]"/>
+          </div>
+        </div>
       </div>
     </nav>
   )

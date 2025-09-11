@@ -28,7 +28,7 @@ export default function Home() {
                   </span>
                 </Button>
                 <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold text-center max-w-6xl leading-tight">
-                  Automate Your Work With Optimate
+                  Automate Your Work With AutomateX
                 </h1>
               </div>
             }
