@@ -27,7 +27,7 @@ const MenuOptions = (props: Props) => {
           href="/"
         >
           <span className="text-2xl font-bold text-neutral-600 dark:text-white">
-           AutomateX.
+           .
           </span>
         </Link>
         <TooltipProvider>
